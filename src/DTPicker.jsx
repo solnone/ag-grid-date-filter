@@ -8,7 +8,7 @@ import {
   useState,
 } from "react";
 
-export default forwardRef(({ onDateChanged }, ref) => {
+export default forwardRef(({ onDateChanged, api}, ref) => {
   const [value, setValue] = useState(null);
   const [picker, setPicker] = useState(null);
   const refFlatPickr = useRef(null);
@@ -49,7 +49,9 @@ export default forwardRef(({ onDateChanged }, ref) => {
     },
 
     setDate(date) {
+      if (api.isDestroyed()) return;
       setValue(date);
+      onDateChanged();
     },
 
     setInputPlaceholder(placeholder) {
