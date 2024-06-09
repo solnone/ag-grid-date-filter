@@ -4,11 +4,16 @@ import "ag-grid-community/styles/ag-theme-quartz.css";
 import { AgGridReact } from "ag-grid-react";
 import { zhTW } from "date-fns/locale/zh-TW";
 import { StrictMode, useCallback, useMemo, useState } from "react";
+import { createRoot } from "react-dom/client";
+
+import "flatpickr/dist/flatpickr.min.css";
+import "flatpickr/dist/themes/dark.css";
+import DTPicker from "./DTPicker";
+
 import { registerLocale } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { createRoot } from "react-dom/client";
-import DTPicker from "./DTPicker";
 import { DatePickerFilter } from "./DatePickerFilter";
+
 import "./index.css";
 import { IOlympicData } from "./interfaces";
 import data from "./olympic-winners.json";

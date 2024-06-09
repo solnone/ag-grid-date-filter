@@ -1,6 +1,5 @@
 import flatpickr from "flatpickr";
-import "flatpickr/dist/flatpickr.min.css";
-import "flatpickr/dist/themes/dark.css";
+
 import {
   forwardRef,
   useEffect,
@@ -71,8 +70,9 @@ export default forwardRef(({ onDateChanged }, ref) => {
       className="ag-input-wrapper custom-date-filter"
       role="presentation"
       ref={refFlatPickr}
+      style={{ width: "100%" }}
     >
-      <input type="text" ref={refInput} data-input style={{ width: "100%" }} />
+      <input type="text" ref={refInput} data-input style={{ width: "100%", paddingRight: 35 }} />
       <a className="input-button" title="clear" data-clear>
         <i className="fa fa-times"></i>
       </a>
