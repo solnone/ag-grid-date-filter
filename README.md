@@ -1,4 +1,18 @@
-# Getting Started with Create React App
+# Custom Date Filter for AG Grid
+
+* [React Grid: Date Filter | AG Grid](https://www.ag-grid.com/react-data-grid/filter-date/)
+* [Custom Date Filter for AG Grid with React Datepicker | by Dmitry Komarov | Medium](https://dmitriy-comarov.medium.com/custom-date-filter-for-ag-grid-with-react-datepicker-6275132564c0)
+* [How to Create a DateTime Filter in Ag-Grid/React | by Josh Harris | JavaScript in Plain English](https://javascript.plainenglish.io/how-to-create-a-datetime-filter-in-ag-grid-react-e2e1ba2fc80)
+* [Next-level cell editing in ag-Grid with CRUD and React Hooks](https://blog.ag-grid.com/next-level-cell-editing-in-ag-grid-with-crud-and-react-hooks/)
+
+## Install
+
+```bash
+npx create-react-app ag-grid-date-filter --template typescript
+cd ag-grid-date-filter
+npm i --save ag-grid-react react-datepicker date-fns flatpickr
+npm i --save-dev @types/react-datepicker
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
