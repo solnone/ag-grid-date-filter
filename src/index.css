@@ -34,3 +34,11 @@ code {
   z-index: 9999;
   line-height: 0;
 }
+
+.w-100 {
+  width: 100%;
+}
+
+.ag-react-container {
+  width: 100%;
+}

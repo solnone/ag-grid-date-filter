@@ -69,12 +69,11 @@ export default forwardRef(({ onDateChanged, api}, ref) => {
 
   return (
     <div
-      className="ag-input-wrapper custom-date-filter"
+      className="ag-input-wrapper custom-date-filter w-100"
       role="presentation"
       ref={refFlatPickr}
-      style={{ width: "100%" }}
     >
-      <input type="text" ref={refInput} data-input style={{ width: "100%", paddingRight: 35 }} />
+      <input type="text" ref={refInput} data-input className="w-100" style={{ paddingRight: 35 }} />
       <a className="input-button" title="clear" data-clear>
         <i className="fa fa-times"></i>
       </a>
